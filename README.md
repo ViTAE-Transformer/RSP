@@ -118,7 +118,7 @@ A video talk about this study (In Chinese)
 
 ## Statement
 
-For any other questions please contact [di.wang at gmail.com](mailto:wd74108520@gmail.com) .
+This project is under MIT licence. For any other questions please contact [di.wang at gmail.com](mailto:wd74108520@gmail.com) .
 
 ## Relevant Projects
 
