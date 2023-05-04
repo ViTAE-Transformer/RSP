@@ -33,13 +33,13 @@
 
 ## Current applications
 
-> **Scene Recognition: Please see [Remote Sensing Pretraining for Scene Recognition](https://github.com/ViTAE-Transformer/ViTAE-Transformer-Remote-Sensing/tree/main/Scene%20Recognition)**;
+> **Scene Recognition: Please see [Remote Sensing Pretraining for Scene Recognition](https://github.com/ViTAE-Transformer/RSP/tree/main/Scene%20Recognition)**;
 
-> **Sementic Segmentation: Please see [Remote Sensing Pretraining for Semantic Segmentation](https://github.com/ViTAE-Transformer/ViTAE-Transformer-Remote-Sensing/tree/main/Semantic%20Segmentation)**;
+> **Sementic Segmentation: Please see [Remote Sensing Pretraining for Semantic Segmentation](https://github.com/ViTAE-Transformer/RSP/tree/main/Semantic%20Segmentation)**;
 
-> **Object Detection: Please see [Remote Sensing Pretraining for Object Detection](https://github.com/ViTAE-Transformer/ViTAE-Transformer-Remote-Sensing/tree/main/Object%20Detection)**;
+> **Object Detection: Please see [Remote Sensing Pretraining for Object Detection](https://github.com/ViTAE-Transformer/RSP/tree/main/Object%20Detection)**;
 
-> **Change Detection: Please see [Remote Sensing Pretraining for Change Detection](https://github.com/ViTAE-Transformer/ViTAE-Transformer-Remote-Sensing/tree/main/Change%20Detection)**;
+> **Change Detection: Please see [Remote Sensing Pretraining for Change Detection](https://github.com/ViTAE-Transformer/RSP/tree/main/Change%20Detection)**;
 
 > **ViTAE: Please see [ViTAE-Transformer](https://github.com/ViTAE-Transformer/ViTAE-Transformer)**;
 
@@ -92,7 +92,7 @@ RSP-ViTAEv2-S-E100 | 224 × 224 | 98.97 |  99.88 |18.8 | [google](https://drive.
 
 ## Usage
 
-Please refer to [Readme.md](https://github.com/ViTAE-Transformer/ViTAE-Transformer-Remote-Sensing/blob/main/Scene%20Recognition/README.md) for installation, dataset preparation, training and inference.
+Please refer to [Readme.md](https://github.com/ViTAE-Transformer/RSP/blob/main/Scene%20Recognition/README.md) for installation, dataset preparation, training and inference.
 
 ## Citation
 
@@ -114,7 +114,7 @@ doi={10.1109/TGRS.2022.3176603}}
 
 A video talk about this study (In Chinese)
 
-[![](https://github.com/ViTAE-Transformer/ViTAE-Transformer-Remote-Sensing/blob/main/Figs/video.png)](https://player.bilibili.com/player.html?aid=469101624&bvid=BV1y5411979L&cid=718511024&page=1)
+[![](https://github.com/ViTAE-Transformer/RSP/blob/main/Figs/video.png)](https://player.bilibili.com/player.html?aid=469101624&bvid=BV1y5411979L&cid=718511024&page=1)
 
 ## Statement
 
