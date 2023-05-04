@@ -12,11 +12,11 @@
 
 > **Scene Recognition: Please see [Usage](#usage) for a quick start**;
 
-> **Sementic Segmentation: Please see [Remote Sensing Pretraining for Semantic Segmentation](https://github.com/ViTAE-Transformer/ViTAE-Transformer-Remote-Sensing/tree/main/Semantic%20Segmentation)**;
+> **Sementic Segmentation: Please see [Remote Sensing Pretraining for Semantic Segmentation](https://github.com/ViTAE-Transformer/RSP/tree/main/Semantic%20Segmentation)**;
 
-> **Object Detection: Please see [Remote Sensing Pretraining for Object Detection](https://github.com/ViTAE-Transformer/ViTAE-Transformer-Remote-Sensing/tree/main/Object%20Detection)**;
+> **Object Detection: Please see [Remote Sensing Pretraining for Object Detection](https://github.com/ViTAE-Transformer/RSP/tree/main/Object%20Detection)**;
 
-> **Change Detection: Please see [Remote Sensing Pretraining for Change Detection](https://github.com/ViTAE-Transformer/ViTAE-Transformer-Remote-Sensing/tree/main/Change%20Detection)**;
+> **Change Detection: Please see [Remote Sensing Pretraining for Change Detection](https://github.com/ViTAE-Transformer/RSP/tree/main/Change%20Detection)**;
 
 > **ViTAE: Please see [ViTAE-Transformer](https://github.com/ViTAE-Transformer/ViTAE-Transformer)**;
 
@@ -111,7 +111,7 @@ pip install pyyaml yacs pillow
 2. Clone this repo
 
 ```
-git clone https://github.com/ViTAE-Transformer/ViTAE-Transformer-Remote-Sensing.git
+git clone https://github.com/ViTAE-Transformer/RSP.git
 ```
 
 ### Data Preparation
@@ -171,11 +171,11 @@ python -m torch.distributed.launch --nproc_per_node 1 --master_port 8888 main.py
 
 ## Other Links
 
-> **Sementic Segmentation: Please see [Remote Sensing Pretraining for Semantic Segmentation](https://github.com/ViTAE-Transformer/ViTAE-Transformer-Remote-Sensing/tree/main/Semantic%20Segmentation)**;
+> **Sementic Segmentation: Please see [Remote Sensing Pretraining for Semantic Segmentation](https://github.com/ViTAE-Transformer/RSP/tree/main/Semantic%20Segmentation)**;
 
-> **Object Detection: Please see [Remote Sensing Pretraining for Object Detection](https://github.com/ViTAE-Transformer/ViTAE-Transformer-Remote-Sensing/tree/main/Object%20Detection)**;
+> **Object Detection: Please see [Remote Sensing Pretraining for Object Detection](https://github.com/ViTAE-Transformer/RSP/tree/main/Object%20Detection)**;
 
-> **Change Detection: Please see [Remote Sensing Pretraining for Change Detection](https://github.com/ViTAE-Transformer/ViTAE-Transformer-Remote-Sensing/tree/main/Change%20Detection)**;
+> **Change Detection: Please see [Remote Sensing Pretraining for Change Detection](https://github.com/ViTAE-Transformer/RSP/tree/main/Change%20Detection)**;
 
 > **ViTAE: Please see [ViTAE-Transformer](https://github.com/ViTAE-Transformer/ViTAE-Transformer)**;
 
