@@ -58,7 +58,7 @@ class LoadPatch(object):
         img = mmcv.imread(results['img'])
         x_start, y_start, x_stop, y_stop = results['patch_win']
         ph_h = y_stop - y_start
-        ph_w = x_stop - y_start
+        ph_w = x_stop - x_start
 
         patch = img[y_start:y_stop, x_start:x_stop]
         if ph_h > patch.shape[0] or ph_w > patch.shape[1]:
