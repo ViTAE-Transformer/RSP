@@ -53,7 +53,7 @@ RSP won the highly cited paper!
 
 <figure>
 <div align="center">
-<img src=Figs/highlycited.png width="100%">
+<img src=highlycited.png width="100%">
 </div>
 </figure>
 
