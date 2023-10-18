@@ -47,6 +47,17 @@
 
 ## Updates
 
+***018/10/2023***
+
+RSP won the highly cited paper!
+
+<figure>
+<div align="center">
+<img src=Figs/highlycited.png width="100%">
+</div>
+</figure>
+
+
 ***027/05/2022***
 
 The early access is available!
