@@ -78,6 +78,15 @@ Please refer to [BIT-Readme.md](https://github.com/justchenhao/BIT_CD/blob/maste
 
 Please refer to [SNUNet-Readme.md](https://github.com/RSCD-Lab/Siam-NestedUNet/blob/master/README.md) for other required packages.
 
+Besides, install ```torchmetrics``` for faster metrics:
+
+```
+# Python Package Index (PyPI)
+pip install torchmetrics
+# Conda
+conda install -c conda-forge torchmetrics
+```
+
 ### Data Preparation
 
 - [CDD](https://drive.google.com/file/d/1GX656JqqOyBi_Ef0w65kDGVto-nHrNs9/edit)

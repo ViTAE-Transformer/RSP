@@ -16,6 +16,12 @@ import numpy as np
 
 from torch.optim import lr_scheduler
 
+try:
+    import torchmetrics.functional as F
+    has_torchmetrics = True
+except ImportError:
+    has_torchmetrics = False
+
 def get_scheduler(optimizer, opt, lr_policy):
     """Return a learning rate scheduler
     Parameters:
@@ -147,10 +153,18 @@ for epoch in range(opt.epochs):
                        (cd_preds.squeeze().byte() == labels.squeeze().byte()).sum() /
                        (labels.size()[0] * (opt.patch_size**2)))
 
-        cd_train_report = prfs(labels.data.cpu().numpy().flatten(),
-                               cd_preds.data.cpu().numpy().flatten(),
-                               average='binary',
-                               pos_label=1,zero_division=0)
+        # NOTE: training time metrics can be removed for faster training
+        if has_torchmetrics:
+            p = F.precision(cd_preds.flatten(), labels.flatten(), task="binary")
+            r = F.recall(cd_preds.flatten(), labels.flatten(), task="binary")
+            f = F.f1_score(cd_preds.flatten(), labels.flatten(), task="binary")
+            cd_train_report = (p.item(),r.item(),f.item())
+            # cd_train_report = (0, 0, 0)
+        else:
+            cd_train_report = prfs(labels.data.cpu().numpy().flatten(),
+                                cd_preds.data.cpu().numpy().flatten(),
+                                average='binary',
+                                pos_label=1,zero_division=0)
 
         train_metrics = set_metrics(train_metrics,
                                     cd_loss,
@@ -193,8 +207,14 @@ for epoch in range(opt.epochs):
             cd_corrects = (100 *
                            (cd_preds.squeeze().byte() == labels.squeeze().byte()).sum() /
                            (labels.size()[0] * (opt.patch_size**2)))
-
-            cd_val_report = prfs(labels.data.cpu().numpy().flatten(),
+            
+            if has_torchmetrics:
+                p = F.precision(cd_preds.flatten(), labels.flatten(), task="binary")
+                r = F.recall(cd_preds.flatten(), labels.flatten(), task="binary")
+                f = F.f1_score(cd_preds.flatten(), labels.flatten(), task="binary")
+                cd_val_report = (p.item(),r.item(),f.item())
+            else:
+                cd_val_report = prfs(labels.data.cpu().numpy().flatten(),
                                  cd_preds.data.cpu().numpy().flatten(),
                                  average='binary',
                                  pos_label=1,zero_division=0)
