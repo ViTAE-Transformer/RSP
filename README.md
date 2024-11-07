@@ -95,6 +95,7 @@ The aerial images are usually obtained by a camera in a birdview perspective lyi
 ## Results and Models
 
 ### MillionAID
+*NOTE: please extract model weight from these checkpoints for finetuning.*
 |Backbone | Input size | Acc@1 | Acc@5 | Param(M) | Pretrained model|
 |-------- | ---------- | ----- | ----- | -------- | ----------|
 RSP-ResNet-50-E300 | 224 × 224 | 98.99 | 99.82| 23.6 | [google](https://drive.google.com/file/d/1K3P4_fDfcBRGqpKoSdSa6OXS4xC1xLC9/view?usp=sharing) & [baidu](https://pan.baidu.com/s/1q7VI1wj2Vp0N5jvaXZOuCA?pwd=5npb)| [//]: & [Log](https://drive.google.com/file/d/1y1GtAs2vbLHwrIK_dVvXyGXrArhiVsIi/view?usp=sharing)|
